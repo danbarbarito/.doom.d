@@ -184,6 +184,3 @@
        :config
        ;;literate
        (default +bindings +smartparens))
-
-;; Mac Setup
-(setq mac-command-modifier 'meta)
