@@ -61,6 +61,7 @@
 
 ;; Org
 (after! org
+  (setq org-blank-before-new-entry '((heading . nil) (plain-list-item . nil)))
   (setq org-capture-templates
         '(("t" "Personal todo" entry
            (file+headline +org-capture-todo-file "Inbox")
