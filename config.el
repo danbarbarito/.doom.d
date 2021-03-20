@@ -108,3 +108,6 @@
            "* %U %?\n %i\n %a"
            :heading "Changelog"
            :prepend t))))
+
+;; Javascript
+(add-hook 'js2-mode-hook 'prettier-js-mode)
