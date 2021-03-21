@@ -111,3 +111,6 @@
 
 ;; Javascript
 (add-hook 'js2-mode-hook 'prettier-js-mode)
+
+;; Deft
+(setq deft-recursive t)
