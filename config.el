@@ -65,7 +65,7 @@
   (setq org-capture-templates
         '(("t" "Personal todo" entry
            (file+headline +org-capture-todo-file "Inbox")
-           "* [ ] %?\n%i\n" :prepend t)
+           "* TODO %?\n%i\n" :prepend t)
           ("n" "Personal notes" entry
            (file+headline +org-capture-notes-file "Inbox")
            "* %u %?\n%i\n" :prepend t)
