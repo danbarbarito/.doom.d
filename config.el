@@ -119,7 +119,9 @@
    org-journal-file-format "%Y-%m-%d.org"))
 
 ;; Javascript
-(add-hook 'js2-mode-hook 'prettier-js-mode)
+(after! javascript
+  (add-hook 'js2-mode-hook 'prettier-js-mode))
 
 ;; Deft
-(setq deft-recursive t)
+(after! deft
+  (setq deft-recursive t))
