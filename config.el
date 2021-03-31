@@ -129,3 +129,7 @@
 ;; Web Mode
 (add-to-list 'auto-mode-alist '("\\.ep\\'" . web-mode))
 (setq web-mode-markup-indent-offset 2)
+
+;; Perl
+(after! perl-mode
+  (load! "vendor/perltidy.el"))
