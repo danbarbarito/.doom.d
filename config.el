@@ -127,5 +127,5 @@
   (setq deft-recursive t))
 
 ;; Web Mode
-(after! web-mode
-  (add-to-list 'auto-mode-alist '("\\.ep\\'" . web-mode)))
+(add-to-list 'auto-mode-alist '("\\.ep\\'" . web-mode))
+(setq web-mode-markup-indent-offset 2)
