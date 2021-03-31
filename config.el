@@ -125,3 +125,7 @@
 ;; Deft
 (after! deft
   (setq deft-recursive t))
+
+;; Web Mode
+(after! web-mode
+  (add-to-list 'auto-mode-alist '("\\.ep\\'" . web-mode)))
