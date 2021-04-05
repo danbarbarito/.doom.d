@@ -128,6 +128,9 @@
 ;; Web Mode
 (add-to-list 'auto-mode-alist '("\\.ep\\'" . web-mode))
 (setq web-mode-markup-indent-offset 2)
+(setq web-mode-engines-alist
+          '(("liquid" .
+             "templates/.*\\.html\\'")))
 
 ;; Perl
 (defun my-perl-mode-save-hook ()
