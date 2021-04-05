@@ -117,7 +117,7 @@
    org-journal-time-prefix "* "
    org-journal-date-format "%a, %Y-%m-%d"
    org-journal-file-format "%Y-%m-%d.org"
-   org-journal-time-format "%h:%M %p"))
+   org-journal-time-format "%I:%M %p"))
 
 ;; Javascript
 (add-hook 'js2-mode-hook 'prettier-js-mode)
