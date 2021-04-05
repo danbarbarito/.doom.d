@@ -119,12 +119,10 @@
    org-journal-file-format "%Y-%m-%d.org"))
 
 ;; Javascript
-(after! javascript
-  (add-hook 'js2-mode-hook 'prettier-js-mode))
+(add-hook 'js2-mode-hook 'prettier-js-mode)
 
 ;; Deft
-(after! deft
-  (setq deft-recursive t))
+(setq deft-recursive t)
 
 ;; Web Mode
 (add-to-list 'auto-mode-alist '("\\.ep\\'" . web-mode))
