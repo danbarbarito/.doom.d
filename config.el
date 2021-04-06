@@ -117,7 +117,9 @@
    org-journal-time-prefix "* "
    org-journal-date-format "%a, %Y-%m-%d"
    org-journal-file-format "%Y-%m-%d.org"
-   org-journal-time-format "%I:%M %p"))
+   org-journal-time-format "%I:%M %p")
+
+  (map! (:leader (:prefix "n" :desc "Org Rifle" "r" #'helm-org-rifle-agenda-files))))
 
 ;; Javascript
 (add-hook 'js2-mode-hook 'prettier-js-mode)

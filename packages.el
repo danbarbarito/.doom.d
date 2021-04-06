@@ -52,3 +52,5 @@
 (package! git-auto-commit-mode)
 
 (package! prettier-js)
+
+(package! helm-org-rifle)
