@@ -88,7 +88,7 @@
 
   ;; Agenda Columns
   (setq org-columns-default-format
-      "%25ITEM %TODO %3PRIORITY %TIMESTAMP"))
+      "%25ITEM %TODO %3PRIORITY %TIMESTAMP %SCHEDULED %DEADLINE"))
 
 ;; Javascript
 (add-hook 'js2-mode-hook 'prettier-js-mode)
