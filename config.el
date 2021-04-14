@@ -83,7 +83,12 @@
    org-journal-file-format "%Y-%m-%d.org"
    org-journal-time-format "%I:%M %p")
 
-  (map! (:leader (:prefix "n" :desc "Org Rifle" "r" #'helm-org-rifle-agenda-files))))
+  (map! (:leader (:prefix "n" :desc "Org Rifle" "r" #'helm-org-rifle-agenda-files)))
+
+
+  ;; Agenda Columns
+  (setq org-columns-default-format
+      "%25ITEM %TODO %3PRIORITY %TIMESTAMP"))
 
 ;; Javascript
 (add-hook 'js2-mode-hook 'prettier-js-mode)
