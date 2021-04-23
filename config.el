@@ -104,13 +104,14 @@
              "templates/.*\\.html\\'")))
 
 ;; Perl
+(defalias 'perl-mode 'cperl-mode)
 (defun my-perl-mode-save-hook ()
   (perltidy-buffer))
 
 (defun my-perl-mode-hook ()
-  (setq-local indent-line-function (lambda ()))
+  ;; (setq-local indent-line-function (lambda ()))
   (add-hook 'before-save-hook 'my-perl-mode-save-hook nil 'local))
 
 (after! perl-mode
   (load! "vendor/perltidy.el")
-  (add-hook 'perl-mode-hook 'my-perl-mode-hook))
+  (add-hook 'cperl-mode-hook 'my-perl-mode-hook))
