@@ -113,7 +113,13 @@
   (perltidy-buffer))
 
 (defun my-perl-mode-hook ()
-  ;; (setq-local indent-line-function (lambda ()))
+
+  (let ((root (ignore-errors (projectile-project-root))))
+    (when root
+      (add-to-list
+       (make-variable-buffer-local 'flycheck-perl-include-path)
+       (concat root "lib"))))
+
   (add-hook 'before-save-hook 'my-perl-mode-save-hook nil 'local))
 
 (after! cperl-mode
