@@ -56,3 +56,5 @@
 (package! helm-org-rifle)
 
 (package! ox-twbs)
+
+(package! web-beautify)
