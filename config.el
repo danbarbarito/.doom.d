@@ -88,7 +88,10 @@
 
   ;; Agenda Columns
   (setq org-columns-default-format
-      "%25ITEM %TODO %3PRIORITY %TIMESTAMP %SCHEDULED %DEADLINE"))
+      "%25ITEM %TODO %3PRIORITY %TIMESTAMP %SCHEDULED %DEADLINE")
+
+  ;; Agenda AM/PM
+  (setq org-agenda-timegrid-use-ampm t))
 
 
 ;; General
